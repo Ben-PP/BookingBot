@@ -1,6 +1,7 @@
 # BookingBot v2
 
 Varausbotti booking järjestelmään.
+
 Botti kykenee varaamaan vuoroja järjestelmästä haluamani päivänä ja kellonaikana
 sekä lisää onnistuneen varauksen omaan google kalenteriini.
 
