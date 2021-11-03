@@ -1,7 +1,8 @@
 # BookingBot v2
 
 Varausbotti booking järjestelmään.
-Botti kykenee varaamaan vuoroja järjestelmästä haluamani päivänä ja kellonaikana sekä lisää onnistuneen varauksen omaan google kalenteriini.
+Botti kykenee varaamaan vuoroja järjestelmästä haluamani päivänä ja kellonaikana
+sekä lisää onnistuneen varauksen omaan google kalenteriini.
 
 	Miksi?
 
@@ -37,7 +38,8 @@ kerrallaa, kun niitä tuli.
 	
 	Rakenne ja toiminta
 
-Simppeli scripti joka ajetaan aina uudelleen joka kerta kun halutaan kokeilla varata vuoroa.
+Simppeli scripti joka ajetaan aina uudelleen joka kerta kun halutaan kokeilla
+varata vuoroa.
 	
 Päätapahtumat
 1. 	Muutama muuttuja joita voi olla tarpeen muuttaa joskus.
@@ -76,4 +78,7 @@ sijasta koitan seuraavalla kerralla tehdä kokoajan päällä olevan ohjelman, j
 tietyin ajoin käy varaamassa vuoron.
 	Seuraavaan versioon parannettavaa löytyy myös esimerkiksi salasanan ja
 käyttäjätunnuksen käsittelystä. Sitä on parannettava ja tehtävä
-tietoturvallisemmaksi. Myös Googlen kalenteri API:n implementoinnin koitan ensi versioon tehdä kokonaiseksi ja monipuolisemmaksi. Myös yleisesti koodin rakenteen koitan tehdä selkeämmäksi ja olio-ohjelmoinnin mukaiseksi. Tämä tulee olemaan hieman helpompaa Javalla, sillä siitä löytyy kokemusta hieman enemmän.
+tietoturvallisemmaksi. Myös Googlen kalenteri API:n implementoinnin koitan ensi
+versioon tehdä kokonaiseksi ja monipuolisemmaksi. Myös yleisesti koodin rakenteen
+koitan tehdä selkeämmäksi ja olio-ohjelmoinnin mukaiseksi. Tämä tulee olemaan
+hieman helpompaa Javalla, sillä siitä löytyy kokemusta hieman enemmän.
