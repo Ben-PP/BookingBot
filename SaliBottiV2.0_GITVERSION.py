@@ -46,7 +46,7 @@ SEKUNNIT = 0.5
 
 #Montako päivää logeja säilytetään
 LOGIENSAILYTYS = 15
-#Polku jonne logikansio halutaan (luo sijaintiin kansion /BBLogs jonne luondaan logitiedosto)
+#Polku jonne logikansio halutaan (luo sijaintiin kansion /BBLogs jonne luodaan logitiedostot)
 LOGFILEPATH = "./Script Logs"
 
 #Kalenterimerkinnän teksti
