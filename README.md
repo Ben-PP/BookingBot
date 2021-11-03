@@ -4,22 +4,22 @@ Varausbotti booking järjestelmään.
 Botti kykenee varaamaan vuoroja järjestelmästä haluamani päivänä ja kellonaikana
 sekä lisää onnistuneen varauksen omaan google kalenteriini.
 
-	Miksi?
+Miksi?
 
-	Idea tähän lähti keväällä 2021 kun aloin jälleen aktiivisesti käymään
+Idea tähän lähti keväällä 2021 kun aloin jälleen aktiivisesti käymään
 salilla ja totesin, että taloyhtiöni omaan saliin oli mahdoton saada vuoroja
 vaikkei kukaan ikinä salia käyttänyt. Vuoroja varailtiin siis "varmuuden vuoksi"
 ja yleensä jätettiin käyttämättä.
 	
-	Järjestelmä
+ärjestelmä
 	
-	Salivuoroja varataan KOAS Booking järjestelmässä joka on
+Salivuoroja varataan KOAS Booking järjestelmässä joka on
 verkkosivupohjainen. Järjestelmässä voi vuoroja varata korkeintaan 14 vuorokauden
 päähän. Uusi päivä aukeaa varattavaksi aina kello 00:00.
 	
-	BookingBot
+BookingBot
 	
-	Ratkaisuna tähän, ettei minun tarvitse joka päivä kello 23:59 olla
+Ratkaisuna tähän, ettei minun tarvitse joka päivä kello 23:59 olla
 kuluttamassa F5 näppäintä näitä varmuudenvuoksivarailijoita vastaan, lähdin
 miettimään olisiko tähän mahdollista tehdä jotakin automaattista ratkaisua. Yhden
 vaihtoehdon tarjosi Selenium framework. Tämä oli tarjolla minulle tutuille
@@ -28,7 +28,8 @@ Tähän päädyin koska Python on pyörinyt pitkään todo listalla kielistä jo
 tahtoisin opetella sekä se vaikutti todella helpolta käyttää yhdessä linuxin
 kanssa. Seleniumin ja Pythonin käyttöön sattui myös löytymään todella hyviä
 ohjeita ja videoita, joten valinta ei ollut vaikea.
-	Näin alkoi tutkimusmatka Pythoniin, Seleniumiin ja botteihin. Botti lähti
+
+Näin alkoi tutkimusmatka Pythoniin, Seleniumiin ja botteihin. Botti lähti
 rakentumaan todella sutjakkaasti ja päädyin tutustumaan myös Google Calendar API:n
 käyttöön, jotta sain merkattua salivuorot automaattisesti omaan kalenteriini.
 Toteutus on suhteellisen suoraviivainen ja ronski. Tästä aivan varmasti näkyy,
@@ -36,7 +37,7 @@ että kyseessä on elämäni ensimmäinen kosketus Pythoniin ja muihin teknologi
 joita käytettiin. Pyrin rakentamaan bottia vauhista ja ratkaisemaan aina ongelman
 kerrallaa, kun niitä tuli.
 	
-	Rakenne ja toiminta
+Rakenne ja toiminta
 
 Simppeli scripti joka ajetaan aina uudelleen joka kerta kun halutaan kokeilla
 varata vuoroa.
@@ -56,27 +57,30 @@ Päätapahtumat
 9.	Tallennetaan logitiedosto, poistetaan riittävän vanhat logitiedostot ja
 	suljetaan ohjelma.
 
-	Huomiot ja opit
+Huomiot ja opit
 	
-	Tämä projekti opetti todella paljon niin Pythonista, Seleniumista, Google
+Tämä projekti opetti todella paljon niin Pythonista, Seleniumista, Google
 Kalenterista ja Booking-järjestelmän tyyppisistä palveluista sekä niiden
 heikkouksista ja ongelmista.
-	Ensinnäkin Python tuli tutuksi tämän avulla ja opin ainakin alkeet hyvin.
+
+Ensinnäkin Python tuli tutuksi tämän avulla ja opin ainakin alkeet hyvin.
 Parannettavaa löytyy todella paljon ja matka on vielä pitkä, että Python sujuu
 luontevasti ja monimutkaisemmat ohjelmat alkavat rakentua järkevästi ja oikein.
-	Toinen huomio mikä projektin aikana tuli tehtyä on se, että kuinka ei
+
+Toinen huomio mikä projektin aikana tuli tehtyä on se, että kuinka ei
 tehdä varauspalvelua, jossa on tärkeää pystyä rajoittamaan käyttäjän
 mahdollisuuksia varata jotakin. Booking palvelusta paljastui esimerkiksi, että
 vuorojen varaaminen kuinka pitkälle tulevaisuuteen tahansa on mahdollista
 muokkaamalla varauksen tekemiseen käytettävää URL-osoitetta.
 
-	Seuraavaksi?
+Seuraavaksi?
 	
-	Seuraavaksi lähden toteuttamaan samaista toiminnallisuutta Javan puolella
+Seuraavaksi lähden toteuttamaan samaista toiminnallisuutta Javan puolella
 ja graafisella käyttöliittymällä. Myös joka kerta uudelleen ajettavan ohjelman
 sijasta koitan seuraavalla kerralla tehdä kokoajan päällä olevan ohjelman, joka
 tietyin ajoin käy varaamassa vuoron.
-	Seuraavaan versioon parannettavaa löytyy myös esimerkiksi salasanan ja
+
+Seuraavaan versioon parannettavaa löytyy myös esimerkiksi salasanan ja
 käyttäjätunnuksen käsittelystä. Sitä on parannettava ja tehtävä
 tietoturvallisemmaksi. Myös Googlen kalenteri API:n implementoinnin koitan ensi
 versioon tehdä kokonaiseksi ja monipuolisemmaksi. Myös yleisesti koodin rakenteen
